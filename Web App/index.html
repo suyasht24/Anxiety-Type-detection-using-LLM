@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+            <h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Hi, welcome to Anxiety type Detector Chatbot</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm your personal AI assistant. I can help with anything you need. How can I assist you today?
+            </p>
+            <div class="flex items-center px-4 py-3 gap-3 @container">
+              <label class="flex flex-col min-w-40 h-12 flex-1">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <input
+                    placeholder="Start typing here"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#283039] focus:border-none h-full placeholder:text-[#9cabba] px-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                  <div class="flex border-none bg-[#283039] items-center justify-center pr-4 rounded-r-xl border-l-0 !pr-2">
+                    <div class="flex items-center gap-4 justify-end">
+                      <div class="flex items-center gap-1">
+                        <button class="flex items-center justify-center p-1.5">
+                          <div class="text-[#9cabba]" data-icon="PaperPlane" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M237.9,200.09,141.85,32.18a16,16,0,0,0-27.89,0l-95.89,168a16,16,0,0,0,19.25,22.92l90.47-31,.1,0,.09,0,90.68,31a16,16,0,0,0,19.24-23Zm-14,7.84L136,177.86V120a8,8,0,0,0-16,0v57.78L32.12,207.94,32,208,127.86,40,224,208Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                      <button
+                        class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#0d80f2] text-white text-sm font-medium leading-normal hidden @[480px]:block"
+                      >
+                        <span class="truncate">Send</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
+              <div class="flex items-center gap-4 text-white">
+                <div class="size-4">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Chatbot</h2>
+              </div>
+              <div class="flex flex-1 justify-end gap-8">
+                <div class="flex items-center gap-9">
+                  <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="#">Profile</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="#">Messages</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="#">Explore</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="#">Create</a>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0d80f2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Upgrade</span>
+                </button>
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c8634102-6ea0-4e63-a801-92d6f0e9e59b.png");'
+                ></div>
+              </div>
+            </header>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      const inputBox = document.querySelector("input[placeholder='Start typing here']");
+      const sendButton = document.querySelector("button span.truncate") || document.querySelector("button svg");
+      const chatContainer = document.querySelector(".layout-content-container");
+    
+      // Create a simple container to show messages
+      const chatLog = document.createElement("div");
+      chatLog.id = "chat-log";
+      chatLog.className = "px-4 text-white space-y-4";
+      chatContainer.insertBefore(chatLog, chatContainer.children[2]); // Add before input box
+    
+      function appendMessage(role, text) {
+  const msg = document.createElement("div");
+  msg.className = `p-2 rounded-xl ${
+    role === "user" ? "bg-[#0d80f2]" : "bg-[#283039]"
+  } w-fit max-w-[80%] opacity-0 transition-opacity duration-500 ease-in`;
+
+  if (role === "bot") {
+    msg.innerHTML = `<strong>Bot:</strong> <span class="bot-text"></span>`;
+    chatLog.appendChild(msg);
+    setTimeout(() => msg.classList.add("opacity-100"), 10);
+
+    // Typing animation: word by word
+    const botTextContainer = msg.querySelector(".bot-text");
+    const words = text.split(" ");
+    let i = 0;
+
+    const interval = setInterval(() => {
+      if (i < words.length) {
+        botTextContainer.innerHTML += words[i] + " ";
+        chatLog.scrollTop = chatLog.scrollHeight;
+        i++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 100); // speed of typing (100ms per word)
+  } else {
+    msg.innerHTML = `<strong>You:</strong> ${text}`;
+    chatLog.appendChild(msg);
+    setTimeout(() => msg.classList.add("opacity-100"), 10);
+  }
+
+  chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+    
+      async function sendMessage() {
+        const userText = inputBox.value.trim();
+        if (!userText) return;
+    
+        appendMessage("user", userText);
+        inputBox.value = "";
+    
+        appendMessage("bot", "<i>Typing...</i>");
+    
+        try {
+          const res = await fetch("http://127.0.0.1:5000/predict", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ text: userText }),
+          });
+    
+          const data = await res.json();
+          // Remove typing message
+          const lastMsg = chatLog.lastChild;
+          chatLog.removeChild(lastMsg);
+    
+          appendMessage("bot", data.response);
+        } catch (err) {
+          const lastMsg = chatLog.lastChild;
+          chatLog.removeChild(lastMsg);
+          appendMessage("bot", "🥺 Sorry, I couldn't connect to my brain (Flask server). Try again later!");
+        }
+      }
+    
+      // Enter key
+      inputBox.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          sendMessage();
+        }
+      });
+    
+      // Send button
+      sendButton?.addEventListener("click", sendMessage);
+    </script>
+    <script>
+      const introMessages = [
+        "I’m here to help you understand your feelings. Just tell me what you’re going through, and I’ll try to identify the type of anxiety you might be experiencing.",
+        "Feeling low or overwhelmed? Just type what’s on your mind — I’ll try my best to guide you toward what anxiety type it could be.",
+        "This is a safe space. Describe how you’ve been feeling lately, and I’ll help detect possible signs of anxiety.",
+        "I’m trained to detect types of anxiety based on how you express your thoughts. Ready when you are 💙",
+        "Tell me how you feel, and I’ll help find the type of anxiety that matches your experience."
+      ];
+    
+      window.addEventListener("DOMContentLoaded", () => {
+        const introParagraph = document.querySelector(".layout-content-container p");
+        if (introParagraph) {
+          const randomMessage = introMessages[Math.floor(Math.random() * introMessages.length)];
+          introParagraph.textContent = randomMessage;
+        }
+      });
+    </script>
+    
+  </body>
+</html>
